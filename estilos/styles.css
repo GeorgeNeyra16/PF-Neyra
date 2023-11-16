@@ -1,0 +1,1110 @@
+/* -----REINICIO DE MEDIDAS CSS----- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gabarito', sans-serif;
+}
+
+body {
+    position: relative;
+    width:100%
+    /* height:100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto; */
+}
+
+/* -----HEADER------ */
+
+header {
+    background-color: black;
+    position: fixed;
+    z-index: 1000;   /*aqui cambie*/
+    top:0;
+    width: 95%;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0%);
+    border-radius: 0 0 30px 30px;
+}
+
+.uphead {
+    background: linear-gradient(90deg, rgb(0,0,0) 20%, rgb(255,215,0) 100%);
+    /* text-align: right; */
+    /* width: 100%; */
+    height:30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.number img {
+    width:17px;
+}
+
+p.number {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+/* NUEVO DOWNHEAD */
+
+.downhead {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0 20px;
+}
+
+.downhead ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    flex-wrap: wrap;
+}
+
+.downhead ul li {
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+    transition: all 0.2s ease;
+}
+
+.downhead ul li:hover {
+    transform: scale(1.1);
+}
+
+.downhead ul li a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    justify-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.actualpage {
+    color: gold !important;
+    text-decoration: underline !important;
+}
+
+.downhead a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+/* .downhead {
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 5px 30px;
+    align-items: center;
+}
+
+.downhead ul {
+    display:flex;
+    margin-right: 20px;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+li {
+    margin: 30px 15px;
+    padding: 10px 2px 10px;
+    text-align: center;
+    list-style-type: none;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+li a {
+    text-decoration: none;
+    color:white;
+    justify-items: center;
+    font-size: 1.2rem;
+}
+
+.downhead a:hover {
+    color: gold;
+    text-decoration: underline;
+} */
+
+/* Footer Bootstrap */
+
+.footer_total {
+    bottom: 0;
+}
+
+/* -----FOOTER------ */
+
+footer {
+    /* background-color: rgb(255, 65, 65); */
+    width:100%;
+    background-image: url(../imagenes/fondo_footer.png);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+footer ul {
+    margin: 0 auto;
+    width: 70%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* height: 100px; */
+    padding-left: 0px;
+}
+
+.nav-link {
+    color:white;
+}
+
+.nav-link:hover {
+    color:gold;
+    text-decoration: underline;
+}
+
+.place {
+    color:gold;
+    text-align: center;
+    padding:10px 0 30px; 
+}
+
+/*.footeritem {
+    list-style-type: none;
+}
+
+.footeritem a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+
+*/
+
+.copyright {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0px;
+    background-color: gold;
+    margin-bottom: 0;
+}
+
+/* footer hr{
+    border-style: none;
+    background-color: white;
+    width:250px;
+    height: 1px;
+    margin: 0 auto;
+}  */
+
+.svgwsp {
+    width: 125px;
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+}
+
+/* -----PORTADA INDEX----- */
+
+.portada {
+    top:-10px;
+    position: relative;  /*para el video */
+    z-index: 0;  /*para el video */
+    width:100%;
+    /* height: 20vh;
+    padding: 300px 0 150px;
+    background-image: url(../imagenes/portada_index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:initial; */
+}
+
+video {
+    width:100%;
+}
+
+.porttext h1 {
+    text-align: center;
+    color:white;
+    font-size: 7rem;
+    /* margin-left: 50px; */
+}
+.porttext h1 span {
+    color: gold;
+}
+.porttext p {
+    color:white;
+    /* margin-left: 50px; */
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.porttext {
+    position: absolute;
+    width:100%;
+    z-index: 100;
+    margin-top: -35%;
+}
+
+/* .portada h1 {
+    justify-items: center;
+    color:white;
+    font-size: 5rem;
+    margin-left: 50px;
+}
+.portada h1 span {
+    color: gold;
+}
+.portada p {
+    color:white;
+    margin-left: 50px;
+    font-size: 1rem;
+} */
+
+/* -----ACERCA DE NOSOTROS----- */
+
+.nosotros {
+    width: 100%;
+    /* background-color: rgb(197, 197, 253); */
+    /* height: 60vh; */
+    margin-bottom: 50px;
+    
+}
+.nosotros h2 {
+    padding: 50px 0 50px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.nosotros h2 span {
+    font-weight: bold;
+}
+
+.nosbox {
+    /* background-color: rgb(0, 255, 213); */
+    display:grid;
+    grid-template-columns: 40% 40%;
+    width:85%;
+    height:60%;
+    margin:0 auto;
+    justify-content: center;
+}
+
+.nosbox .nosboxleft {
+    margin: auto auto;
+    border: solid 1px black;
+    height: 300px;
+    width:80%;
+    max-width: 350px;
+    min-width: 200px;
+    background-image: url(../imagenes/nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* .nosboxleft img {
+    display:none
+} */
+
+.nosbox .nosboxright {
+    background-color: rgb(255, 255, 255);
+    margin: auto auto;
+    text-align: center;
+    padding: 10px;
+    height:fit-content;
+    border: solid 1px black;
+    box-shadow: 12px 12px 0px gold;
+
+}
+.nosotros_p {
+    /* background-color: rgb(94, 255, 0); */
+    padding: 30px;
+    margin-top:30px;
+}
+
+.nosboxright button {
+    width:300px;
+    height: 30px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    color:white;
+    /* transition: all 0.3s ease; */
+}
+.nosboxright button:hover {
+    background-color: gold;
+    color: black;
+    cursor:pointer;
+    /* transform: scale(1.1); */
+    box-shadow: 2px 2px 6px black;
+}
+
+.hr-nos-serv {
+    border-style: none;
+    background-color: rgb(172, 172, 172);
+    width:80%;
+    height: 2px;
+    margin: 0 auto;
+}
+
+/* -----NUESTROS SERVICIOS----- */
+.servicios {
+    width: 100%;
+    /* background-color: rgb(197, 197, 253); */
+    /* height: 60vh; */
+    margin-bottom: 50px;
+
+}
+.servicios h2 {
+    padding: 50px 0 50px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.servicios h2 span {
+    font-weight: bold;
+}
+
+.todos {
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cuadro {
+    border: solid 1px black;
+    width: 15%;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 12px 12px 0px gold;
+}
+
+.cuadro .servicono {
+    border: solid 1px rgb(0, 0, 0);
+    margin-top: -50px;
+    width: 70px;
+    height:70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.servicono img {
+    width: 100%;
+    /* justify-content: center;
+    align-items: center; */
+    padding:5px;
+}
+
+.cuadro .service, .description {
+    text-align: center;
+}
+
+.cuadro .description {
+    margin-top:10px;
+}
+
+.servicios .servbutton {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.servicios button {
+    width:300px;
+    height: 30px;
+    margin: 20px 10%;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    color :white;
+    /* text-transform:uppercase; */
+    /* transition: all 0.3s ease; */
+}
+
+.servicios button:hover {
+    background-color: gold;
+    color: black;
+    cursor:pointer;
+    /* transform: scale(1.1); */
+    box-shadow: 2px 2px 6px black;
+}
+
+/* ---- FOOTER PREIMAGE */
+
+.imgprefooter {
+    width: 100%;
+    height:400px;
+    margin-top:-30px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+    background-image: url(../imagenes/portada_index.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+/* ------NOSOTROS PAGE------ */
+/* PORTADA - NOSOTROS */
+.nosotrospordata {
+    width:100%;
+    /* height:20vh; */
+    padding: 300px 0 150px;
+    background-image: url(../imagenes/portada_nosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:top;
+}
+
+.nosotrospordata h2 {
+    color:white;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+/* ---TEXTO NOSOTROS--- */
+
+.nosotrospage {
+    width: 100%;
+    height:fit-content;
+    background-color: gold;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.nosotrosparagraph {
+    width: 80%;
+    height:fit-content;
+    margin: 40px auto 20px;
+    text-align: center;
+    padding:40px 0px 0px;
+}
+
+.nosbutton {
+    display:flex;
+    justify-content: center;
+}
+
+.nosotrospage button {
+    width:300px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    color:white;
+    text-transform:uppercase;
+}
+
+.nosotrospage button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor:pointer;
+    box-shadow: 2px 2px 6px black;
+}
+
+/* ---MISION Y VISION--- */
+
+.misionvision
+{
+    width: 100%;
+    /* height: 52vh; */
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(66, 255, 28); */
+
+}
+
+.mvbox {
+    /* border: solid 1px black; */
+    width:20%;
+    min-width: 350px;
+    height: 80%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.mvtitulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mvparagraph {
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    /* height: 280px; */
+    padding: 20px 30px 20px;
+    box-shadow: 12px 12px 0px gold;
+}
+
+.noshr {
+    border-style: none;
+    background-color: rgb(172, 172, 172);
+    width:80%;
+    height: 2px;
+    margin: 10px auto;
+}
+
+/* ---POR QUE ELEGIRNOS--- */
+
+.elegirnos {
+    width: 100%;
+    /* height: 40vh; */
+    justify-content: center;
+    /* background-color: rgb(66, 255, 28); */
+    padding-top: 40px;
+}
+
+.elegirnostitulo {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.elegirnosopciones {
+    display:flex;
+    /* border: solid 1px black; */
+    justify-content: space-around;
+    width:80%;
+    margin:0 auto;
+}
+
+.elegirnosbox {
+    height: 250px;
+    width: 300px;
+    /* border: solid 1px black; */
+    margin: 30px;
+}
+
+.elegirnosicon {
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    margin:0 auto;
+    box-shadow: 10px 10px 0px gold;
+    background-color: white;
+}
+
+.elegirnosicon img{
+    width:100%;
+    padding:15px;
+}
+
+.elegirnosdescription {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.hrelegirnos {
+    border-style: none;
+    background-color: rgb(172, 172, 172);
+    width:80%;
+    height: 2px;
+    margin: 10px auto;
+}
+
+/* ---NUESTROS VALORES--- */
+
+.valores {
+    width: 100%;
+    /* height: 40vh; */
+    justify-content: center;
+    /* background-color: rgb(66, 255, 28); */
+    padding-top: 40px;
+}
+
+.valorestitulo {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.valoresopciones {
+    display:flex;
+    /* border: solid 1px black;  */
+    justify-content: space-around;
+    width:80%;
+    margin:0 auto;
+}
+
+.valoresbox {
+    height: 250px;
+    width: 300px;
+    /* border: solid 1px black; */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:30px;
+}
+
+.valoresicon {
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    margin:0 auto;
+    box-shadow: 10px 10px 0px gold;
+    background-color: white;
+}
+
+.valoresicon img{
+    width:100%;
+    padding:15px;
+}
+
+.valoresdescription {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+/* ------SERVICIOS PAGE------ */
+/* PORTADA - SERVICIOS */
+.serviciospordata {
+    width:100vw;
+    /* height:20vh; */
+    padding: 300px 0 150px;
+    background-image: url(../imagenes/portada_nosotros.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:top;
+}
+
+.serviciospordata h2 {
+    color:white;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+/* SERVICIOS PARRAFO */
+
+.serviciospage {
+    width: 100%;
+    height:fit-content;
+    background-color: gold;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.serviciosparagraph {
+    width: 80%;
+    height:fit-content;
+    margin: 40px auto 20px;
+    text-align: center;
+    padding:40px 0px 0px;
+}
+
+.serviciospage .servbutton {
+    display:flex;
+    justify-content: center;
+}
+
+.serviciospage .servbutton button {
+    width:300px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    color:rgb(255, 255, 255);
+    text-transform:uppercase;
+}
+
+.serviciospage .servbutton button:hover {
+    background-color:rgb(255, 255, 255);
+    color: black;
+    cursor:pointer;
+}
+
+/* SERVICIOS CAJA */
+
+.serviciocaja {
+    width: 70%;
+    height: 250px;
+    margin:100px auto;
+    display:flex;
+    background-color: gold;
+    padding:30px;
+}
+
+.servleft {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    height: 250px;
+    width:60%;
+    margin-top:-50px;
+    margin-left: -50px;
+    border: solid 1px black;
+}
+
+.serviciotitle {
+    font-size:2rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.servleft .description {
+    font-size:1rem;
+    margin: 30px 0px;
+    text-indent: 10px;
+}
+
+.servbuttons {
+    margin: 0 auto;
+}
+
+.servbuttons button {
+    width:300px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    color:white;
+    text-transform:uppercase;
+}
+
+.servbuttons button:hover {
+    background-color: gold;
+    color: black;
+    cursor:pointer;
+}
+
+.servright {
+    background-color: rgb(59, 135, 223);
+    border: solid 1px black;
+    height: 250px;
+    width: 40%;
+    margin-left:20px;
+    background-image: url(../imagenes/cam_security.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------PREGUNTAS FRECUENTES PAGE------ */
+/* PORTADA - FAQS */
+.pregfrecportada {
+    width:100%;
+    /* height:20vh; */
+    padding: 300px 0 150px;
+    background-image: url(../imagenes/portada_nosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:top;
+}
+
+.pregfrecportada h2 {
+    color:white;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+/* layoutit faqs */
+
+.layoutfaqs {  display: grid;
+    grid-template-columns: 0.9fr 1.8fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "faqsparagraph faqs";
+  }
+  
+.faqsparagraph { 
+    grid-area: faqsparagraph; background-color: gold;
+    display: flex;
+    /* padding: 10%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.faqdescrip {
+    text-align: center;
+    width: 60%;
+    font-size:1.3rem;
+}
+  
+.faqdescrip span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.faqs { 
+    grid-area: faqs;
+    padding: 100px 0;  
+}
+
+
+/* PARRAFO - FAQS */
+
+/* .pregfrecpage {
+    width: 100%;
+    height:fit-content;
+    background-color: gold;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.faqdescrip {
+    width: 80%;
+    height:fit-content;
+    margin: 40px auto 20px;
+    text-align: center;
+    padding:40px 0px 0px;
+}
+
+.faqsection {
+    width: 100%;
+    height: 100%;
+}
+
+.cajafaq {
+    width:70%;
+    margin:70px auto;
+    padding: 10px 20px 30px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    box-shadow: 12px 12px 0px gold;
+}
+
+.cajafaq .pregunta {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 70%;
+    margin-top: -25px;
+    margin-left: -30px;
+    font-size: 1.5rem;
+    color:gold;
+}
+
+.cajafaq .respuesta {
+    margin-top:20px;
+    font-size: 1.3rem;
+} */
+
+/* ------CONTACTO PAGE------ */
+/* PORTADA - CONTACTO */
+.contactospordata {
+    width:100%;
+    height:20vh;
+    padding: 300px 0 150px;
+    background-image: url(../imagenes/portada_nosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:top;
+}
+
+.contactospordata h2 {
+    color:white;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+/* --- CONTACTO --- */
+/* CONTACTO - PARRAFO */
+
+.contactpage {
+    width: 100%;
+    height:fit-content;
+    background-color: gold;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.contactparagraph {
+    width: 80%;
+    height:fit-content;
+    margin: 20px auto 20px;
+    text-align: center;
+    padding:40px 0px 0px;
+}
+
+/* CONTACTO - FORMULARIO */
+/*
+ .formcontainer {
+    margin-top: 30px;
+    margin-bottom:50px;
+    width: 100%;
+    height:800px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+}
+
+.formulario {
+    padding:65px 100px;
+    width: 50%;
+    height: 65%;
+    background-color: rgb(255, 255, 255);
+    margin:100px auto;
+    border: solid 1px black;
+    box-shadow: 12px 12px 0px gold;
+}
+
+.formcontainer .formulario input .nameform,.emailform,.numberform {
+    width: 100%;
+    height:40px;
+    margin:15px 0;
+    border: solid 1px black;
+    box-shadow: 8px 8px 0px gold;
+}
+
+.nameform {
+    width:100%;
+    height:40px;
+    margin:15px 0;
+    border: solid 1px black;
+    box-shadow: 8px 8px 0px gold;
+}
+
+.comentform {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    margin:15px 0;
+    border: solid 1px black;
+    box-shadow: 8px 8px 0px gold;
+}
+
+.checkterms a{
+    color:rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.checkterms a:hover{
+    color:gold;
+    text-decoration: underline;
+}
+
+.centrarbtn {
+    display:flex;
+    justify-content: center;
+}
+
+.enviarform {
+    margin-top:45px;
+    align-items: center;
+    width:80%;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    color:white;
+}
+
+.enviarform:hover {
+    background-color: gold;
+    color: black;
+    cursor:pointer;
+    border: solid 1px black;
+} */
+
+/* ESTILO PARA FORMULARIO BOOTSTRAP*/
+.contact_form {
+    margin: 100px auto;
+    margin-right:auto;
+    margin-left:auto;
+    width:40vw;
+    padding: 50px;
+    border: solid 1px black;
+    box-shadow: 7px 7px 0px gold;
+}
+
+.linkterms {
+    text-decoration: none;
+    color:rgb(185, 185, 185)
+}
+
+.linkterms:hover {
+    text-decoration: underline;
+    color:rgb(102, 102, 102)
+}
+
+.input_height {
+    height: 50px;
+    box-shadow: 7px 7px 0px gold;
+    border-radius: 0;    
+    border: solid 1px black;
+}
+.text_box {
+    border: solid 1px black;
+    border-radius: 0;
+    box-shadow: 7px 7px 0px gold;
+}
+.span_box{
+    border-radius: 0;
+    min-height: 150px;
+}
+.area_box {
+    border-radius: 0;
+    min-height: auto;
+    max-height: 150px;
+}
+
+.button_form {
+    border-radius: 0;
+    color:white;
+    background-color: black; 
+}
+.button_form:hover {
+    color:rgb(0, 0, 0);
+    background-color: gold;
+    box-shadow: 2px 2px 6px black; 
+}
+
+/* layoutit form */
+
+.layoutform {  
+    display: grid;
+    grid-template-columns: 0.9fr 1.8fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "formparagraph formu";
+  }
+  
+.formparagraph { 
+    grid-area: formparagraph; background-color: gold;
+    display: flex;
+    /* padding: 10%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.formdescrip {
+    text-align: center;
+    width: 60%;
+    font-size:1.3rem;
+}
+  
+.formdescrip span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formu { 
+    grid-area: formu;
+    padding: 50px 0;  
+}
+
+/* RESPONSIVE WEB DESIGN --- INICIO*/
+
+@media screen and (max-width: 1024px)  {
+    header {
+        background-color: aquamarine;
+    }
+}
