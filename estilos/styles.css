@@ -685,7 +685,7 @@ video {
 
 .serviciospordata h2 {
     color:white;
-    font-size: 5rem;
+    font-size: 6vw;
     text-align: center;
     letter-spacing: 2rem;
 }
@@ -735,6 +735,8 @@ video {
     /* height: 250px; */
     margin:100px auto;
     display:flex;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: gold;
     padding:30px;
 }
@@ -742,9 +744,9 @@ video {
 .servleft {
     background-color: rgb(255, 255, 255);
     padding: 30px;
-    /* height: 250px; */
     width:60%;
-    height:auto;
+    height: 100%;
+    /* min-width: 337px; */
     margin-top:-50px;
     margin-left: -50px;
     border: solid 1px black;
@@ -767,14 +769,18 @@ video {
     display: flex;
     justify-content: center;
 }
-
+/* .servbuttons .contactar {
+    width:90%;
+    margin: 0 100px; 
+} */
 .servbuttons button {
-    width:300px;
+    width:200px;
     height: 30px;
     background-color: rgb(0, 0, 0);
     border-style: none;
     color:white;
     text-transform:uppercase;
+    
 }
 
 .servbuttons button:hover {
@@ -1141,6 +1147,11 @@ video {
     .uphead {
         background: linear-gradient(90deg, rgb(0,0,0) 20%, rgb(255,215,0) 80%);
     }
+    /* ------------------------------- */
+    .servleft .description {
+        margin: 20px 0px;
+        font-size: 0.9rem;
+    }
 }
 @media screen and (max-width: 991px)  {
     .layoutfaqs {
@@ -1179,10 +1190,32 @@ video {
         font-size: 0.8rem;
     }
 }
+@media screen and (max-width: 816px)  {
+    .serviciocaja {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:30px 5px;
+    }
+    .servleft {
+        width:100%;
+        margin-top:-50px;
+        margin-left: -60px;
+    }
+    .servright {
+        width: 100%;
+        margin-left:-60px;
+        background-image: url(../imagenes/cam_security.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
 @media screen and (max-width: 768px)  {
     .uphead {
         background: linear-gradient(90deg, rgb(0,0,0) 10%, rgb(255,215,0) 90%);
     }
+    /* ---------------------------- */
+    
+    /* ---------------------------- */
     .pregfrecportada h2 {
         font-size: 2rem;
         letter-spacing: 1.5rem;  
@@ -1190,17 +1223,16 @@ video {
     .layoutfaqs {
         margin-top:60px
     }
+    .faqdescrip {
+        font-size:1.1rem;
+    }
+    /* --------------------------- */
     .contactospordata h2 {
         font-size: 2.1rem;
         letter-spacing: 1rem;  
     }
     .contact_form {
         width: 70vw;
-    }
-}
-@media screen and (max-width: 767px)  {
-    .faqdescrip {
-        font-size:1.1rem;
     }
 }
 @media screen and (max-width: 702px)  {
@@ -1227,6 +1259,30 @@ video {
     .downhead ul li a {
         font-size: 0.8rem;
     }
+    /* ---------------------------------- */
+    .serviciospordata h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+    }
+    .serviciosparagraph {
+        font-size: 0.9rem;
+    }
+    .serviciocaja {
+        margin: 50px auto;
+    }
+    .servleft {
+        width:100%;
+        margin-top:-50px;
+        margin-left: -30px;
+    }
+    .servright {
+        width: 100%;
+        margin-left:-30px;
+        background-image: url(../imagenes/cam_security.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    /* ---------------------------------- */
     .pregfrecportada h2 {
         font-size: 1.5rem;
         letter-spacing: 1rem;  
@@ -1241,10 +1297,12 @@ video {
         font-size: 1.8rem;
         letter-spacing: 0.8rem;  
     }
+    /* ---------------------------------- */
     .contact_form {
         width: 90vw;
         padding: 30px;
     }
+    /* ---------------------------------- */
 }
 @media screen and (max-width: 375px)  {
     .svgwsp {
@@ -1253,6 +1311,14 @@ video {
     .contactospordata h2 {
         font-size: 1.5rem;
         letter-spacing: 0.5rem;  
+    }
+    /* --------------------------------- */
+    .servleft {
+        padding: 15px;
+    }
+    .serviciotitle {
+        font-size:1.5rem;
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 371px)  {
