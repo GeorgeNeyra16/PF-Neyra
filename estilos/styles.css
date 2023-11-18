@@ -809,7 +809,7 @@ video {
 
 .pregfrecportada h2 {
     color:white;
-    font-size: 5rem;
+    font-size: 6vw;
     text-align: center;
     letter-spacing: 2rem;
 }
@@ -912,7 +912,7 @@ video {
 
 .contactospordata h2 {
     color:white;
-    font-size: 5rem;
+    font-size: 6vw;
     text-align: center;
     letter-spacing: 2rem;
 }
@@ -1106,12 +1106,68 @@ video {
 
 /* RESPONSIVE WEB DESIGN --- HEADER*/
 
+@media screen and (max-width: 1199px)  {
+    .faqdescrip {
+        text-align: center;
+        width: 80%;
+        font-size:1.1rem;
+    }
+    .layoutform {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        margin:50px auto auto;
+        padding: 0px;
+        width:100%;
+        gap: 0px 0px;
+        /* grid-auto-flow: row; */
+        grid-template-areas:
+          "formparagraph"
+          "formu";
+    }
+    .formu {
+        padding:0;
+    }
+    .formparagraph {
+        padding-top: 15px;
+    }
+    .formdescrip {
+        font-size: 1rem;
+    }
+    .contact_form {
+        width: 60vw;
+    }
+}
 @media screen and (max-width: 1024px)  {
     .uphead {
         background: linear-gradient(90deg, rgb(0,0,0) 20%, rgb(255,215,0) 80%);
     }
 }
-
+@media screen and (max-width: 991px)  {
+    .layoutfaqs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        margin:100px auto auto;
+        padding: 0px;
+        width:100%;
+        gap: 0px 0px;
+        /* grid-auto-flow: row; */
+        grid-template-areas:
+          "faqsparagraph"
+          "faqs";
+    }
+    .faqsparagraph {
+        width:100%;
+        padding-top: 20px;
+    }
+    .faqs {
+        padding: 0;
+    }
+    .faqdescrip {
+        text-align: center;
+        width: 80%;
+        font-size:1.2rem;
+    }
+}
 @media screen and (max-width: 862px)  {
     .downhead ul li a {
         font-size: 1rem;
@@ -1126,6 +1182,25 @@ video {
 @media screen and (max-width: 768px)  {
     .uphead {
         background: linear-gradient(90deg, rgb(0,0,0) 10%, rgb(255,215,0) 90%);
+    }
+    .pregfrecportada h2 {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;  
+    }
+    .layoutfaqs {
+        margin-top:60px
+    }
+    .contactospordata h2 {
+        font-size: 2.1rem;
+        letter-spacing: 1rem;  
+    }
+    .contact_form {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 767px)  {
+    .faqdescrip {
+        font-size:1.1rem;
     }
 }
 @media screen and (max-width: 702px)  {
@@ -1152,6 +1227,33 @@ video {
     .downhead ul li a {
         font-size: 0.8rem;
     }
+    .pregfrecportada h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;  
+    }
+    .faqdescrip {
+        font-size:0.9rem;
+    }
+    .svgwsp {
+        width: 110px;
+    }
+    .contactospordata h2 {
+        font-size: 1.8rem;
+        letter-spacing: 0.8rem;  
+    }
+    .contact_form {
+        width: 90vw;
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 375px)  {
+    .svgwsp {
+        width: 100px;
+    }
+    .contactospordata h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;  
+    }
 }
 @media screen and (max-width: 371px)  {
     .downhead ul li a {
@@ -1165,55 +1267,14 @@ video {
         padding: 3px 5px;
     }
 }
-/* RESPONSIVE WEB DESIGN --- GRID FAQS*/
-@media screen and (max-width: 1024px)  {
-    .pregfrecportada h2 {
-        font-size: 4rem;  
-}
-}
-@media screen and (max-width: 768px)  {
-    .pregfrecportada h2 {
-        font-size: 2rem;
-        letter-spacing: 1.5rem;  
-}
-}
-@media screen and (max-width: 600px)  {
-    .pregfrecportada h2 {
-        font-size: 1.5rem;
-        letter-spacing: 1rem;  
-}
-}
 
-@media screen and (max-width: 1199px)  {
-    .faqdescrip {
-        text-align: center;
-        width: 80%;
-        font-size:1.1rem;
+@media screen and (max-width: 320px)  {
+    .pregfrecportada h2 {
+        font-size: 1.3rem;
+        letter-spacing: 0.8rem;  
     }
-}
-@media screen and (max-width: 991px)  {
-    .layoutfaqs {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
-        margin:100px 0px 0px;
-        padding: 0px;
-        width:100%;
-        gap: 0px 0px;
-        /* grid-auto-flow: row; */
-        grid-template-areas:
-          "faqsparagraph"
-          "faqs";
-    }
-    .faqsparagraph {
-        width:100%;
-        padding-top: 20px;
-    }
-    .faqs {
-        padding: 0;
-    }
-    .faqdescrip {
-        text-align: center;
-        width: 80%;
-        font-size:1.2rem;
+    .pregfrecportada {
+        background-position:top;
+        background-size: cover;
     }
 }
