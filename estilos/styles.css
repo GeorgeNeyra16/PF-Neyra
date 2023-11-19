@@ -257,7 +257,7 @@ video {
     position: absolute;
     width:100%;
     z-index: 100;
-    margin-top: -35%;
+    margin-top: -31%;
 }
 
 /* .portada h1 {
@@ -1184,7 +1184,7 @@ video {
         margin-top: -30%;
     }
     .porttext h1 {
-        font-size: 5.2rem;
+        font-size: 8vw;
     }
     .porttext p {
         font-size: 1.2em;
