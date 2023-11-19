@@ -217,7 +217,8 @@ footer ul {
     top:-10px;
     position: relative;  /*para el video */
     z-index: 0;  /*para el video */
-    width:100%;
+    /* width:100%; */
+    min-height: 800px;
     /* height: 20vh;
     padding: 300px 0 150px;
     background-image: url(../imagenes/portada_index.png);
@@ -229,12 +230,17 @@ footer ul {
 
 video {
     width:100%;
+    height:100%;
+    object-fit:cover;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .porttext h1 {
     text-align: center;
     color:white;
-    font-size: 7rem;
+    font-size: 8vw;
     /* margin-left: 50px; */
 }
 .porttext h1 span {
@@ -243,7 +249,7 @@ video {
 .porttext p {
     color:white;
     /* margin-left: 50px; */
-    font-size: 1.5rem;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -291,19 +297,21 @@ video {
 
 .nosbox {
     /* background-color: rgb(0, 255, 213); */
-    display:grid;
-    grid-template-columns: 40% 40%;
-    width:85%;
-    height:60%;
+    /* display:grid;
+    grid-template-columns: 40% 40%; */
+    display:flex;
+    flex-wrap: wrap;
+    width:70%;
+    /* height:60%; */
     margin:0 auto;
-    justify-content: center;
+    justify-content:space-between;
 }
 
 .nosbox .nosboxleft {
     margin: auto auto;
     border: solid 1px black;
     height: 300px;
-    width:80%;
+    width:100%;
     max-width: 350px;
     min-width: 200px;
     background-image: url(../imagenes/nosotros.jpg);
@@ -317,10 +325,11 @@ video {
 
 .nosbox .nosboxright {
     background-color: rgb(255, 255, 255);
-    margin: auto auto;
+    margin: 0 auto;
     text-align: center;
     padding: 10px;
-    height:fit-content;
+    width:60%;
+    /* height:fit-content; */
     border: solid 1px black;
     box-shadow: 12px 12px 0px gold;
 
@@ -365,7 +374,7 @@ video {
 
 }
 .servicios h2 {
-    padding: 50px 0 50px;
+    padding: 30px 0 30px;
     text-align: center;
     font-size: 4rem;
     font-weight: normal;
@@ -377,15 +386,18 @@ video {
 
 .todos {
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 .cuadro {
     border: solid 1px black;
-    width: 15%;
+    width: 18%;
+    min-width: 211px;
     height: fit-content;
-    padding: 20px;
+    padding: 10px;
+    margin:40px 20px;
     background-color: white;
     box-shadow: 12px 12px 0px gold;
 }
@@ -420,11 +432,15 @@ video {
     display: flex;
     justify-content: center;
 }
-
+.servbutton a{
+    width: 40%;
+    margin-bottom: 30px;
+}
 .servicios button {
-    width:300px;
-    height: 30px;
-    margin: 20px 10%;
+    width:100%;
+    /* height: 30px; */
+    /* margin: 20px; */
+    padding: 5px;
     background-color: rgb(0, 0, 0);
     border-style: none;
     color :white;
@@ -1118,6 +1134,17 @@ video {
         margin:30px 0 0; 
     }
 } 
+@media screen and (max-width: 1249px)  {
+    .nosbox .nosboxright {
+        margin: 30px auto 0;
+        width:80%;
+        padding: 0;
+    }
+    .nosotros_p {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+} 
 @media screen and (max-width: 1199px)  {
     .faqdescrip {
         text-align: center;
@@ -1150,6 +1177,19 @@ video {
     }
 }
 @media screen and (max-width: 1024px)  {
+    .portada {
+        min-height: 500px;
+    }
+    .porttext {
+        margin-top: -30%;
+    }
+    .porttext h1 {
+        font-size: 5.2rem;
+    }
+    .porttext p {
+        font-size: 1.2em;
+    }
+    /* -------------------------------- */
     .uphead {
         background: linear-gradient(90deg, rgb(0,0,0) 20%, rgb(255,215,0) 80%);
     }
@@ -1225,6 +1265,22 @@ video {
     .uphead {
         background: linear-gradient(90deg, rgb(0,0,0) 10%, rgb(255,215,0) 90%);
     }
+    .portada {
+        min-height: 450px;
+    }
+    .porttext {
+        margin-top: -40%;
+    }
+    /* ---------------------------- */
+    .nosotros h2 {
+        padding: 30px 0 30px;
+        font-size: 7vw;
+    }
+    /* ---------------------------- */
+    .servicios h2 {
+        padding: 30px 0 30px;
+        font-size: 7vw;
+    }
     /* ---------------------------- */
     /* .mvbox {
         width:80%;
@@ -1256,6 +1312,14 @@ video {
         justify-content: center;
     }
 }
+@media screen and (max-width: 636px)  {
+    .nosbox .nosboxright {
+        width:95%;
+    }
+    .nosboxright button {
+        width:70%;
+    }
+}
 @media screen and (max-width: 491px)  {
     .downhead {
         justify-content: center;
@@ -1274,6 +1338,30 @@ video {
     }
     .downhead ul li a {
         font-size: 0.8rem;
+    }
+    .portada {
+        min-height: 370px;
+    }
+    .porttext {
+        margin-top: -45%;
+    }
+    .porttext h1 {
+        font-size: 2.6rem;
+    }
+    .porttext p {
+        font-size: 0.9rem;
+    }
+    /* ---------------------------- */
+    .nosotros h2 {
+        font-size: 8.5vw;
+    }
+    .servicios h2 {
+        font-size: 8.5vw;
+    }
+    .imgprefooter {
+        height: 300px;
+        /* background-size:100vw; */
+        background-position: center;
     }
     /* ---------------------------------- */
     .nosotrospordata h2 {
@@ -1340,12 +1428,29 @@ video {
     /* ---------------------------------- */
 }
 @media screen and (max-width: 375px)  {
+    .portada {
+        min-height: 370px;
+    }
+    .porttext {
+        margin-top: -50%;
+    }
+    .porttext h1 {
+        font-size: 2.4rem;
+    }
+    .porttext p {
+        font-size: 0.8rem;
+    }
+    /* --------------------------------- */
     .svgwsp {
         width: 100px;
     }
     .contactospordata h2 {
         font-size: 1.5rem;
         letter-spacing: 0.5rem;  
+    }
+    /* --------------------------------- */
+    .nosboxright button {
+        margin-top:0px;
     }
     /* --------------------------------- */
     .mvbox {
@@ -1374,6 +1479,18 @@ video {
 }
 
 @media screen and (max-width: 320px)  {
+    .portada {
+        min-height: 350px;
+    }
+    .porttext {
+        margin-top: -50%;
+    }
+    .porttext h1 {
+        font-size: 2rem;
+    }
+    .porttext p {
+        font-size: 0.8rem;
+    }
     /* --------------------------------- */
     .mvbox {
         width:40%;
