@@ -744,7 +744,7 @@ video {
     background-color:rgb(255, 255, 255);
     color: black;
     cursor:pointer;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0);
 }
 
 /* SERVICIOS CAJA */
