@@ -1,0 +1,381 @@
+/* RESPONSIVE WEB DESIGN --- HEADER*/
+@media screen and (max-width: 1349px)  {
+    main .elegirnos .elegirnosopciones .elegirnosbox {
+        margin:30px 0 0; 
+    }
+} 
+@media screen and (max-width: 1249px)  {
+    main .nosotros .nosbox .nosboxright {
+        margin: 30px auto 0;
+        width:80%;
+        padding: 0;
+    }
+    main .nosotros .nosbox .nosboxright .nosotros_p {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+} 
+@media screen and (max-width: 1199px)  {
+    main .layoutfaqs .faqsparagraph .faqdescrip {
+        text-align: center;
+        width: 80%;
+        font-size:1.1rem;
+    }
+    main .layoutform {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        margin:50px auto auto;
+        padding: 0px;
+        width:100%;
+        gap: 0px 0px;
+        /* grid-auto-flow: row; */
+        grid-template-areas:
+          "formparagraph"
+          "formu";
+    }
+    main .layoutform .formu {
+        padding:0;
+    }
+    main .layoutform .formparagraph {
+        padding-top: 15px;
+    }
+    main .layoutform .formparagraph .formdescrip {
+        font-size: 1rem;
+    }
+    main .layoutform .formu .contact_form {
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 1024px)  {
+    main .portada {
+        min-height: 500px;
+    }
+    main .porttext {
+        margin-top: -30%;
+    }
+    main .porttext h1 {
+        font-size: 8vw;
+    }
+    main .porttext p {
+        font-size: 1.2em;
+    }
+    /* -------------------------------- */
+    header .uphead {
+        background: linear-gradient(90deg, rgb(0,0,0) 20%, rgb(255,215,0) 80%);
+    }
+    /* ------------------------------- */
+    main .serviciostodos .serviciocaja .servleft .description {
+        margin: 20px 0px;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 991px)  {
+    main .layoutfaqs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        margin:100px auto auto;
+        padding: 0px;
+        width:100%;
+        gap: 0px 0px;
+        /* grid-auto-flow: row; */
+        grid-template-areas:
+          "faqsparagraph"
+          "faqs";
+    }
+    main .layoutfaqs .faqsparagraph {
+        width:100%;
+        padding-top: 20px;
+    }
+    main .layoutfaqs .faqs {
+        padding: 0;
+    }
+    main .layoutfaqs .faqsparagraph .faqdescrip {
+        text-align: center;
+        width: 80%;
+        font-size:1.2rem;
+    }
+}
+@media screen and (max-width: 899px)  {
+    main .misionvision .mvbox {
+        width:80%;
+        margin-top:30px;
+    }
+} 
+@media screen and (max-width: 862px)  {
+    header .downhead ul li a {
+        font-size: 1rem;
+    }
+    header .downhead .logo img {
+        width:200px;
+    }
+    header .uphead .number {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 816px)  {
+    main .serviciostodos .serviciocaja {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:30px 5px;
+    }
+    main .serviciostodos .serviciocaja .servleft {
+        width:100%;
+        margin-top:-50px;
+        margin-left: -60px;
+    }
+    main .serviciostodos .serviciocaja .servright {
+        width: 100%;
+        margin-left:-60px;
+        background-image: url(../imagenes/cam_security.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 768px)  {
+    header .uphead {
+        background: linear-gradient(90deg, rgb(0,0,0) 10%, rgb(255,215,0) 90%);
+    }
+    main .portada {
+        min-height: 450px;
+    }
+    main .porttext {
+        margin-top: -40%;
+    }
+    /* ---------------------------- */
+    main .nosotros h2 {
+        padding: 30px 0 30px;
+        font-size: 7vw;
+    }
+    /* ---------------------------- */
+    main .servicios h2 {
+        padding: 30px 0 30px;
+        font-size: 7vw;
+    }
+    /* ---------------------------- */
+    /* .mvbox {
+        width:80%;
+        margin-left: 20px;
+        margin-right: 20px;
+    } */
+    /* ---------------------------- */
+    main .pregfrecportada h2 {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;  
+    }
+    main .layoutfaqs {
+        margin-top:60px;
+    }
+    main .layoutfaqs .faqsparagraph .faqdescrip {
+        font-size:1.1rem;
+    }
+    /* --------------------------- */
+    div .contactospordata h2 {
+        font-size: 2.1rem;
+        letter-spacing: 1rem;  
+    }
+    main .layoutform .formu .contact_form {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 702px)  {
+    header .downhead {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 636px)  {
+    main .nosotros .nosbox .nosboxright {
+        width:95%;
+    }
+    main .nosotros .nosbox .nosboxright a button {
+        width:70%;
+    }
+}
+@media screen and (max-width: 491px)  {
+    header .downhead {
+        justify-content: center;
+    }
+    header .downhead ul li a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+    header .downhead .logo img {
+        width:170px;
+    }
+}
+@media screen and (max-width: 425px)  {
+    header .uphead {
+        background: linear-gradient(90deg, rgb(0,0,0) 5%,rgb(255,215,0) 60%, rgb(255,215,0) 100%);
+    }
+    header .downhead ul li a {
+        font-size: 0.8rem;
+    }
+    main .portada {
+        min-height: 370px;
+    }
+    main .porttext {
+        margin-top: -45%;
+    }
+    main .porttext h1 {
+        font-size: 2.6rem;
+    }
+    main .porttext p {
+        font-size: 0.9rem;
+    }
+    /* ---------------------------- */
+    main .nosotros h2 {
+        font-size: 8.5vw;
+    }
+    main .servicios h2 {
+        font-size: 8.5vw;
+    }
+    main .imgprefooter {
+        height: 300px;
+        /* background-size:100vw; */
+        background-position: center;
+    }
+    /* ---------------------------------- */
+    main .nosotrospordata h2 {
+        font-size: 1.4rem;
+        letter-spacing: 1rem;
+    }
+    main .nosotrospage .nosotrosparagraph {
+        font-size: 0.9rem;
+    }
+    main .misionvision .mvbox {
+        width:10%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    main .elegirnos .elegirnostitulo {
+        font-size: 2rem;
+    }
+    main .valores .valorestitulo {
+        font-size: 2rem;
+    }
+    main .misionvision {
+        width: 100%;
+    }
+    /* ---------------------------------- */
+    main .serviciospordata h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+    }
+    main .serviciospage .serviciosparagraph {
+        font-size: 0.9rem;
+    }
+    main .serviciostodos .serviciocaja {
+        margin: 50px auto;
+    }
+    main .serviciostodos .serviciocaja .servleft {
+        width:100%;
+        margin-top:-50px;
+        margin-left: -30px;
+    }
+    main .serviciostodos .serviciocaja .servright {
+        width: 100%;
+        margin-left:-30px;
+        background-image: url(../imagenes/cam_security.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    /* ---------------------------------- */
+    main .pregfrecportada h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;  
+    }
+    main .layoutfaqs .faqsparagraph .faqdescrip {
+        font-size:0.9rem;
+    }
+    footer .wspcontact a .svgwsp {
+        width: 110px;
+    }
+    div .contactospordata h2 {
+        font-size: 1.8rem;
+        letter-spacing: 0.8rem;  
+    }
+    /* ---------------------------------- */
+    main .layoutform .formu .contact_form {
+        width: 90vw;
+        padding: 30px;
+    }
+    /* ---------------------------------- */
+}
+@media screen and (max-width: 375px)  {
+    main .portada {
+        min-height: 370px;
+    }
+    main .porttext {
+        margin-top: -50%;
+    }
+    main .porttext h1 {
+        font-size: 2.4rem;
+    }
+    main .porttext p {
+        font-size: 0.8rem;
+    }
+    /* --------------------------------- */
+    footer .wspcontact a .svgwsp {
+        width: 100px;
+    }
+    div .contactospordata h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;  
+    }
+    /* --------------------------------- */
+    main .nosotros .nosbox .nosboxright a button {
+        margin-top:0px;
+    }
+    /* --------------------------------- */
+    main .misionvision .mvbox {
+        width:50%;
+    }
+    /* --------------------------------- */
+    main .serviciostodos .serviciocaja .servleft {
+        padding: 15px;
+    }
+    main .serviciostodos .serviciocaja .servleft .serviciotitle {
+        font-size:1.5rem;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 371px)  {
+    header .downhead ul li a {
+        font-size: 0.7rem;
+        padding: 5px 9px;
+    }
+}
+@media screen and (max-width: 333px)  {
+    header .downhead ul li a {
+        font-size: 0.7rem;
+        padding: 3px 5px;
+    }
+}
+
+@media screen and (max-width: 320px)  {
+    main .portada {
+        min-height: 350px;
+    }
+    main .porttext {
+        margin-top: -50%;
+    }
+    main .porttext h1 {
+        font-size: 2rem;
+    }
+    main .porttext p {
+        font-size: 0.8rem;
+    }
+    /* --------------------------------- */
+    main .misionvision .mvbox {
+        width:40%;
+        padding: 40px;
+    }
+    /* --------------------------------- */
+    main .pregfrecportada h2 {
+        font-size: 1.3rem;
+        letter-spacing: 0.8rem;  
+    }
+    main .pregfrecportada {
+        background-position:top;
+        background-size: cover;
+    }
+}

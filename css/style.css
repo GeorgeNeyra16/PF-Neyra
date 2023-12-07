@@ -1,0 +1,1156 @@
+/* -----REINICIO DE MEDIDAS CSS----- */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gabarito", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+}
+
+/* -----HEADER--------------------------------------- */
+header {
+  background-color: black;
+  position: fixed;
+  z-index: 1000; /*aqui cambie*/
+  top: 0;
+  width: 95%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 0 0 30px 30px;
+  /* NUEVO DOWNHEAD ---------------------------------*/
+}
+header .uphead {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(255, 215, 0) 80%);
+  height: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+header .uphead .number {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+header .uphead .number img {
+  width: 17px;
+}
+header .downhead {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+header .downhead .logo img {
+  width: 250px;
+}
+header .downhead ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+header .downhead ul li {
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 0;
+  transition: all 0.2s ease;
+}
+header .downhead ul li:hover {
+  transform: scale(1.1);
+}
+header .downhead ul li a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+  justify-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+}
+header .downhead ul li a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+header .downhead ul li .actualpage {
+  color: gold !important;
+  text-decoration: underline !important;
+}
+
+/* Footer Bootstrap ---------------------------------*/
+footer {
+  width: 100%;
+  background-image: url(../imagenes/fondo_footer2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  bottom: 0;
+}
+footer ul {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer ul .nav-link {
+  color: white;
+}
+footer ul .nav-link:hover {
+  color: gold;
+  text-decoration: underline;
+}
+footer .socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer .socialmedia img {
+  width: 50px;
+}
+footer .socialmedia a:hover {
+  cursor: pointer;
+}
+footer .place {
+  color: gold;
+  text-align: center;
+  padding: 10px 0 10px;
+}
+footer .copyright {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px 0px;
+  background-color: gold;
+  margin-bottom: 0;
+}
+footer .wspcontact a .svgwsp {
+  width: 125px;
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+}
+
+/* -------------------------------------------------------------------------------*/
+main {
+  /* -----ACERCA DE NOSOTROS----- */
+  /* -----NUESTROS SERVICIOS----- */
+  /* ---- FOOTER PREIMAGE */
+}
+main .portada {
+  top: -10px;
+  position: relative; /*para el video */
+  z-index: 0; /*para el video */
+  min-height: 800px;
+}
+main .portada video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .porttext {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  margin-top: -31%;
+}
+main .porttext h1 {
+  text-align: center;
+  color: white;
+  font-size: 8vw;
+}
+main .porttext h1 span {
+  color: gold;
+}
+main .porttext p {
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+}
+main .nosotros {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main .nosotros h2 {
+  padding: 50px 0 50px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: normal;
+}
+main .nosotros h2 span {
+  font-weight: bold;
+}
+main .nosotros .nosbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+main .nosotros .nosbox .nosboxleft {
+  margin: auto auto;
+  border: solid 1px black;
+  height: 300px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 200px;
+  background-image: url(../imagenes/nosotros2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .nosotros .nosbox .nosboxright {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  width: 60%;
+  border: solid 1px black;
+  box-shadow: 12px 12px 0px gold;
+}
+main .nosotros .nosbox .nosboxright .nosotros_p {
+  padding: 30px;
+  margin-top: 30px;
+}
+main .nosotros .nosbox .nosboxright a button {
+  width: 300px;
+  height: 30px;
+  margin: 20px;
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  color: white;
+}
+main .nosotros .nosbox .nosboxright a button:hover {
+  background-color: gold;
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px black;
+}
+main .hr-nos-serv {
+  border-style: none;
+  background-color: rgb(172, 172, 172);
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+}
+main .servicios {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main .servicios h2 {
+  padding: 30px 0 30px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: normal;
+}
+main .servicios h2 span {
+  font-weight: bold;
+}
+main .servicios .todos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .servicios .todos .cuadro {
+  border: solid 1px black;
+  width: 18%;
+  min-width: 211px;
+  height: fit-content;
+  padding: 10px;
+  margin: 40px 20px;
+  background-color: white;
+  box-shadow: 12px 12px 0px gold;
+}
+main .servicios .todos .cuadro .servicono {
+  border: solid 1px rgb(0, 0, 0);
+  margin-top: -50px;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+main .servicios .todos .cuadro .servicono img {
+  width: 100%;
+  padding: 5px;
+}
+main .servicios .todos .cuadro .service {
+  text-align: center;
+}
+main .servicios .todos .cuadro .description {
+  text-align: center;
+  margin-top: 10px;
+}
+main .servicios .servbutton {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+main .servicios .servbutton a {
+  width: 40%;
+  margin-bottom: 30px;
+}
+main .servicios .servbutton a button {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  color: white;
+}
+main .servicios .servbutton a button:hover {
+  background-color: gold;
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px black;
+}
+main .imgprefooter {
+  width: 100%;
+  height: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  background-color: aquamarine;
+  background-image: url(../imagenes/portada_index3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .imgprefooter p {
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+main .imgprefooter p span {
+  color: gold;
+}
+
+/* -------------------------------------------------------------------------------*/
+/* ------NOSOTROS PAGE------ */
+main {
+  /* PORTADA - NOSOTROS */
+  /* ---TEXTO NOSOTROS--- */
+  /* ---MISION Y VISION--- */
+  /* ---POR QUE ELEGIRNOS--- */
+  /* ---NUESTROS VALORES--- */
+}
+main .nosotrospordata {
+  width: 100%;
+  padding: 300px 0 150px;
+  background-image: url(../imagenes/portada_nosotros2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+main .nosotrospordata h2 {
+  color: white;
+  font-size: 6vw;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+main .nosotrospage {
+  width: 100%;
+  height: fit-content;
+  background-color: gold;
+  justify-items: center;
+  padding-bottom: 30px;
+}
+main .nosotrospage .nosotrosparagraph {
+  width: 80%;
+  height: fit-content;
+  margin: 40px auto 20px;
+  text-align: center;
+  padding: 40px 0px 0px;
+}
+main .nosotrospage .nosbutton {
+  display: flex;
+  justify-content: center;
+}
+main .nosotrospage .nosbutton a button {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  color: white;
+  text-transform: uppercase;
+}
+main .nosotrospage .nosbutton a button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px black;
+}
+main .misionvision {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .misionvision .mvbox {
+  width: 20%;
+  min-width: 350px;
+  height: 80%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+}
+main .misionvision .mvbox .mvtitulo {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .misionvision .mvbox .mvparagraph {
+  background-color: rgb(255, 255, 255);
+  border: solid 1px black;
+  padding: 20px 30px 20px;
+  box-shadow: 12px 12px 0px gold;
+}
+main .noshr {
+  border-style: none;
+  background-color: rgb(172, 172, 172);
+  width: 80%;
+  height: 2px;
+  margin: 10px auto;
+}
+main .elegirnos {
+  width: 100%;
+  justify-content: center;
+  padding-top: 40px;
+}
+main .elegirnos .elegirnostitulo {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .elegirnos .elegirnosopciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+main .elegirnos .elegirnosopciones .elegirnosbox {
+  width: 300px;
+  margin: 30px;
+}
+main .elegirnos .elegirnosopciones .elegirnosbox .elegirnosicon {
+  height: 150px;
+  width: 150px;
+  border: solid 1px black;
+  margin: 0 auto;
+  box-shadow: 10px 10px 0px gold;
+  background-color: white;
+}
+main .elegirnos .elegirnosopciones .elegirnosbox .elegirnosicon img {
+  width: 100%;
+  padding: 15px;
+}
+main .elegirnos .elegirnosopciones .elegirnosbox .elegirnosdescription {
+  text-align: center;
+  margin-top: 20px;
+}
+main .hrelegirnos {
+  border-style: none;
+  background-color: rgb(172, 172, 172);
+  width: 80%;
+  height: 2px;
+  margin: 10px auto;
+}
+main .valores {
+  width: 100%;
+  justify-content: center;
+  padding-top: 40px;
+}
+main .valores .valorestitulo {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .valores .valoresopciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto 50px;
+}
+main .valores .valoresopciones .valoresbox {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+main .valores .valoresopciones .valoresbox .valoresicon {
+  height: 150px;
+  width: 150px;
+  border: solid 1px black;
+  margin: 0 auto;
+  box-shadow: 10px 10px 0px gold;
+  background-color: white;
+}
+main .valores .valoresopciones .valoresbox .valoresicon img {
+  width: 100%;
+  padding: 15px;
+}
+main .valores .valoresopciones .valoresbox .valoresdescription {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ------SERVICIOS PAGE------ */
+/* PORTADA - SERVICIOS */
+main {
+  /* SERVICIOS PARRAFO */
+}
+main .serviciospordata {
+  width: 100vw;
+  padding: 300px 0 150px;
+  background-image: url(../imagenes/portada_servicios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+main .serviciospordata h2 {
+  color: white;
+  font-size: 6vw;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+main .serviciospage {
+  width: 100%;
+  height: fit-content;
+  background-color: gold;
+  justify-items: center;
+  padding-bottom: 30px;
+}
+main .serviciospage .serviciosparagraph {
+  width: 80%;
+  height: fit-content;
+  margin: 40px auto 20px;
+  text-align: center;
+  padding: 40px 0px 0px;
+}
+main .serviciospage .servbutton {
+  display: flex;
+  justify-content: center;
+}
+main .serviciospage .servbutton a {
+  width: 300px;
+}
+main .serviciospage .servbutton a button {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+main .serviciospage .servbutton a button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+main .serviciostodos .serviciocaja {
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: gold;
+  padding: 30px;
+}
+main .serviciostodos .serviciocaja .servleft {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 60%;
+  height: 100%;
+  margin-top: -50px;
+  margin-left: -50px;
+  border: solid 1px black;
+}
+main .serviciostodos .serviciocaja .servleft .serviciotitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+main .serviciostodos .serviciocaja .servleft .description {
+  font-size: 1rem;
+  margin: 30px 0px;
+  text-indent: 10px;
+}
+main .serviciostodos .serviciocaja .servleft .servbuttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+main .serviciostodos .serviciocaja .servleft .servbuttons a button {
+  width: 200px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  color: white;
+  text-transform: uppercase;
+}
+main .serviciostodos .serviciocaja .servleft .servbuttons a button:hover {
+  background-color: gold;
+  color: black;
+  cursor: pointer;
+}
+main .serviciostodos .serviciocaja .servright {
+  background-color: rgb(59, 135, 223);
+  border: solid 1px black;
+  height: 250px;
+  width: 40%;
+  margin-left: 20px;
+  background-size: cover;
+  background-position: center;
+}
+main .serviciostodos .serviciocaja .imgserv1 {
+  background-image: url(../imagenes/cam_security.jpg);
+}
+main .serviciostodos .serviciocaja .imgserv2 {
+  background-image: url(../imagenes/sens_mov.jpg);
+  background-position: 0px -50px;
+}
+main .serviciostodos .serviciocaja .imgserv3 {
+  background-image: url(../imagenes/cerco-electrico.jpg);
+  background-position: top;
+}
+main .serviciostodos .serviciocaja .imgserv4 {
+  background-image: url(../imagenes/detector_inc.jpg);
+}
+
+/* ------PREGUNTAS FRECUENTES PAGE------ */
+/* PORTADA - FAQS */
+main {
+  /* layoutit faqs */
+}
+main .pregfrecportada {
+  width: 100%;
+  padding: 300px 0 150px;
+  background-image: url(../imagenes/portada_nosotros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+main .pregfrecportada h2 {
+  color: white;
+  font-size: 6vw;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+main .layoutfaqs {
+  display: grid;
+  grid-template-columns: 0.9fr 1.8fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "faqsparagraph faqs";
+}
+main .layoutfaqs .faqsparagraph {
+  grid-area: faqsparagraph;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .layoutfaqs .faqsparagraph .faqdescrip {
+  text-align: center;
+  width: 60%;
+  font-size: 1.3rem;
+}
+main .layoutfaqs .faqsparagraph .faqdescrip span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .layoutfaqs .faqs {
+  grid-area: faqs;
+  padding: 100px 0;
+}
+
+/* ------CONTACTO PAGE------ */
+/* PORTADA - CONTACTO */
+div .contactospordata {
+  width: 100%;
+  padding: 300px 0 150px;
+  background-image: url(../imagenes/portada_contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+div .contactospordata h2 {
+  color: white;
+  font-size: 6vw;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+
+main .layoutform {
+  display: grid;
+  grid-template-columns: 0.9fr 1.8fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "formparagraph formu";
+}
+main .layoutform .formparagraph {
+  grid-area: formparagraph;
+  background-color: #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .layoutform .formparagraph .formdescrip {
+  text-align: center;
+  width: 60%;
+  font-size: 1.3rem;
+}
+main .layoutform .formparagraph .formdescrip span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .layoutform .formu {
+  grid-area: formu;
+  padding: 50px 0;
+}
+main .layoutform .formu .contact_form {
+  margin: 100px auto;
+  width: 40vw;
+  padding: 50px;
+  border: solid 1px black;
+  box-shadow: 7px 7px 0px gold;
+}
+main .layoutform .formu .contact_form div div div input .input_height {
+  height: 50px;
+  box-shadow: 7px 7px 0px gold;
+  border-radius: 0;
+  border: solid 1px black;
+}
+main .layoutform .formu .contact_form .text_box {
+  border: solid 1px black;
+  border-radius: 0;
+  box-shadow: 7px 7px 0px gold;
+}
+main .layoutform .formu .contact_form .text_box .span_box {
+  border-radius: 0;
+  min-height: 150px;
+}
+main .layoutform .formu .contact_form .text_box .area_box {
+  border-radius: 0;
+  min-height: auto;
+  max-height: 150px;
+}
+main .layoutform .formu .contact_form div label .linkterms {
+  text-decoration: none;
+  color: rgb(185, 185, 185);
+}
+main .layoutform .formu .contact_form div label .linkterms:hover {
+  text-decoration: underline;
+  color: rgb(102, 102, 102);
+}
+main .layoutform .formu .contact_form .button_form {
+  border-radius: 0;
+  color: white;
+  background-color: black;
+}
+main .layoutform .formu .contact_form .button_form:hover {
+  color: rgb(0, 0, 0);
+  background-color: gold;
+  box-shadow: 2px 2px 6px black;
+}
+
+/* ---------------RESPONSIVE WEB DESIGN--------------*/
+/* RESPONSIVE WEB DESIGN --- HEADER*/
+@media screen and (max-width: 1349px) {
+  main .elegirnos .elegirnosopciones .elegirnosbox {
+    margin: 30px 0 0;
+  }
+}
+@media screen and (max-width: 1249px) {
+  main .nosotros .nosbox .nosboxright {
+    margin: 30px auto 0;
+    width: 80%;
+    padding: 0;
+  }
+  main .nosotros .nosbox .nosboxright .nosotros_p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  main .layoutfaqs .faqsparagraph .faqdescrip {
+    text-align: center;
+    width: 80%;
+    font-size: 1.1rem;
+  }
+  main .layoutform {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 50px auto auto;
+    padding: 0px;
+    width: 100%;
+    gap: 0px 0px;
+    /* grid-auto-flow: row; */
+    grid-template-areas: "formparagraph" "formu";
+  }
+  main .layoutform .formu {
+    padding: 0;
+  }
+  main .layoutform .formparagraph {
+    padding-top: 15px;
+  }
+  main .layoutform .formparagraph .formdescrip {
+    font-size: 1rem;
+  }
+  main .layoutform .formu .contact_form {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .portada {
+    min-height: 500px;
+  }
+  main .porttext {
+    margin-top: -30%;
+  }
+  main .porttext h1 {
+    font-size: 8vw;
+  }
+  main .porttext p {
+    font-size: 1.2em;
+  }
+  /* -------------------------------- */
+  header .uphead {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(255, 215, 0) 80%);
+  }
+  /* ------------------------------- */
+  main .serviciostodos .serviciocaja .servleft .description {
+    margin: 20px 0px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  main .layoutfaqs {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 100px auto auto;
+    padding: 0px;
+    width: 100%;
+    gap: 0px 0px;
+    /* grid-auto-flow: row; */
+    grid-template-areas: "faqsparagraph" "faqs";
+  }
+  main .layoutfaqs .faqsparagraph {
+    width: 100%;
+    padding-top: 20px;
+  }
+  main .layoutfaqs .faqs {
+    padding: 0;
+  }
+  main .layoutfaqs .faqsparagraph .faqdescrip {
+    text-align: center;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 899px) {
+  main .misionvision .mvbox {
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 862px) {
+  header .downhead ul li a {
+    font-size: 1rem;
+  }
+  header .downhead .logo img {
+    width: 200px;
+  }
+  header .uphead .number {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 816px) {
+  main .serviciostodos .serviciocaja {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 5px;
+  }
+  main .serviciostodos .serviciocaja .servleft {
+    width: 100%;
+    margin-top: -50px;
+    margin-left: -60px;
+  }
+  main .serviciostodos .serviciocaja .servright {
+    width: 100%;
+    margin-left: -60px;
+    background-image: url(../imagenes/cam_security.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .uphead {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 10%, rgb(255, 215, 0) 90%);
+  }
+  main .portada {
+    min-height: 450px;
+  }
+  main .porttext {
+    margin-top: -40%;
+  }
+  /* ---------------------------- */
+  main .nosotros h2 {
+    padding: 30px 0 30px;
+    font-size: 7vw;
+  }
+  /* ---------------------------- */
+  main .servicios h2 {
+    padding: 30px 0 30px;
+    font-size: 7vw;
+  }
+  /* ---------------------------- */
+  /* .mvbox {
+      width:80%;
+      margin-left: 20px;
+      margin-right: 20px;
+  } */
+  /* ---------------------------- */
+  main .pregfrecportada h2 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+  }
+  main .layoutfaqs {
+    margin-top: 60px;
+  }
+  main .layoutfaqs .faqsparagraph .faqdescrip {
+    font-size: 1.1rem;
+  }
+  /* --------------------------- */
+  div .contactospordata h2 {
+    font-size: 2.1rem;
+    letter-spacing: 1rem;
+  }
+  main .layoutform .formu .contact_form {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 702px) {
+  header .downhead {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 636px) {
+  main .nosotros .nosbox .nosboxright {
+    width: 95%;
+  }
+  main .nosotros .nosbox .nosboxright a button {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 491px) {
+  header .downhead {
+    justify-content: center;
+  }
+  header .downhead ul li a {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+  header .downhead .logo img {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .uphead {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 5%, rgb(255, 215, 0) 60%, rgb(255, 215, 0) 100%);
+  }
+  header .downhead ul li a {
+    font-size: 0.8rem;
+  }
+  main .portada {
+    min-height: 370px;
+  }
+  main .porttext {
+    margin-top: -45%;
+  }
+  main .porttext h1 {
+    font-size: 2.6rem;
+  }
+  main .porttext p {
+    font-size: 0.9rem;
+  }
+  /* ---------------------------- */
+  main .nosotros h2 {
+    font-size: 8.5vw;
+  }
+  main .servicios h2 {
+    font-size: 8.5vw;
+  }
+  main .imgprefooter {
+    height: 300px;
+    /* background-size:100vw; */
+    background-position: center;
+  }
+  /* ---------------------------------- */
+  main .nosotrospordata h2 {
+    font-size: 1.4rem;
+    letter-spacing: 1rem;
+  }
+  main .nosotrospage .nosotrosparagraph {
+    font-size: 0.9rem;
+  }
+  main .misionvision .mvbox {
+    width: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  main .elegirnos .elegirnostitulo {
+    font-size: 2rem;
+  }
+  main .valores .valorestitulo {
+    font-size: 2rem;
+  }
+  main .misionvision {
+    width: 100%;
+  }
+  /* ---------------------------------- */
+  main .serviciospordata h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+  }
+  main .serviciospage .serviciosparagraph {
+    font-size: 0.9rem;
+  }
+  main .serviciostodos .serviciocaja {
+    margin: 50px auto;
+  }
+  main .serviciostodos .serviciocaja .servleft {
+    width: 100%;
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+  main .serviciostodos .serviciocaja .servright {
+    width: 100%;
+    margin-left: -30px;
+    background-image: url(../imagenes/cam_security.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  /* ---------------------------------- */
+  main .pregfrecportada h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+  }
+  main .layoutfaqs .faqsparagraph .faqdescrip {
+    font-size: 0.9rem;
+  }
+  footer .wspcontact a .svgwsp {
+    width: 110px;
+  }
+  div .contactospordata h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.8rem;
+  }
+  /* ---------------------------------- */
+  main .layoutform .formu .contact_form {
+    width: 90vw;
+    padding: 30px;
+  }
+  /* ---------------------------------- */
+}
+@media screen and (max-width: 375px) {
+  main .portada {
+    min-height: 370px;
+  }
+  main .porttext {
+    margin-top: -50%;
+  }
+  main .porttext h1 {
+    font-size: 2.4rem;
+  }
+  main .porttext p {
+    font-size: 0.8rem;
+  }
+  /* --------------------------------- */
+  footer .wspcontact a .svgwsp {
+    width: 100px;
+  }
+  div .contactospordata h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+  /* --------------------------------- */
+  main .nosotros .nosbox .nosboxright a button {
+    margin-top: 0px;
+  }
+  /* --------------------------------- */
+  main .misionvision .mvbox {
+    width: 50%;
+  }
+  /* --------------------------------- */
+  main .serviciostodos .serviciocaja .servleft {
+    padding: 15px;
+  }
+  main .serviciostodos .serviciocaja .servleft .serviciotitle {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 371px) {
+  header .downhead ul li a {
+    font-size: 0.7rem;
+    padding: 5px 9px;
+  }
+}
+@media screen and (max-width: 333px) {
+  header .downhead ul li a {
+    font-size: 0.7rem;
+    padding: 3px 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .portada {
+    min-height: 350px;
+  }
+  main .porttext {
+    margin-top: -50%;
+  }
+  main .porttext h1 {
+    font-size: 2rem;
+  }
+  main .porttext p {
+    font-size: 0.8rem;
+  }
+  /* --------------------------------- */
+  main .misionvision .mvbox {
+    width: 40%;
+    padding: 40px;
+  }
+  /* --------------------------------- */
+  main .pregfrecportada h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.8rem;
+  }
+  main .pregfrecportada {
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

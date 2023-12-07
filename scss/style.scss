@@ -1,0 +1,1075 @@
+/* -----REINICIO DE MEDIDAS CSS----- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gabarito', sans-serif;
+}
+
+body {
+    position: relative;
+    width:100vw;
+}
+
+/* -----HEADER--------------------------------------- */
+
+header {
+    background-color: black;
+    position: fixed;
+    z-index: 1000;   /*aqui cambie*/
+    top:0;
+    width: 95%;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0%);
+    border-radius: 0 0 30px 30px;
+
+    .uphead {
+        background: linear-gradient(90deg, rgb(0,0,0) 20%, rgb(255,215,0) 80%);
+        height:30px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        .number {
+            margin-right: 20px;
+            margin-bottom: 0;
+
+            img {
+                width:17px;
+            }
+        }    
+    }
+
+    /* NUEVO DOWNHEAD ---------------------------------*/
+
+    .downhead {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding:0 20px;
+    
+        .logo {
+            img {
+                width: 250px;
+            }
+        }
+    
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin:0;
+            flex-wrap: wrap;
+    
+            li {
+                list-style-type: none;
+                text-align: center;
+                justify-content: center;
+                margin: 10px 0;
+                transition: all 0.2s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                
+                a {
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: white;
+                    justify-items: center;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    &:hover {
+                        color: gold;
+                        text-decoration: underline;
+                    }
+                }
+
+                .actualpage {
+                    color: gold !important;
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Footer Bootstrap ---------------------------------*/
+footer {
+    width:100%;
+    background-image: url(../imagenes/fondo_footer2.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    bottom: 0;
+
+    ul {
+        margin: 0 auto;
+        width: 70%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // padding-left: 0px;
+        padding-top: 10px; 
+        padding-bottom: 10px;
+
+        .nav-link {
+            color:white;
+            &:hover {
+                color:gold;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 15px; 
+        padding-bottom: 15px;
+
+        img {
+            width:50px;
+        }
+
+        a:hover {
+            cursor:pointer;
+        }
+
+    }
+
+    .place {
+        color:gold;
+        text-align: center;
+        padding:10px 0 10px; 
+    }
+
+    .copyright {
+        color:rgb(0, 0, 0);
+        text-align: center;
+        padding: 5px 0px;
+        background-color: gold;
+        margin-bottom: 0;
+    }
+
+    .wspcontact {
+        a {
+            .svgwsp {
+                width: 125px;
+                position: fixed;
+                bottom: 1px;
+                right: 1px;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------------*/
+
+main {
+    .portada {
+        top:-10px;
+        position: relative;  /*para el video */
+        z-index: 0;  /*para el video */
+        min-height: 800px;
+    
+        video {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    }
+
+    .porttext {
+        position: absolute;
+        width:100%;
+        z-index: 100;
+        margin-top: -31%;
+
+        h1 {
+            text-align: center;
+            color:white;
+            font-size: 8vw;
+
+            span {
+                color: gold;
+            }
+        }
+
+        p {
+            color:white;
+            font-size: 2vw;
+            text-align: center;
+        }
+    }
+
+    /* -----ACERCA DE NOSOTROS----- */
+
+    .nosotros {
+        width: 100%;
+        margin-bottom: 50px;
+
+        h2 {
+            padding: 50px 0 50px;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: normal;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .nosbox {
+            display:flex;
+            flex-wrap: wrap;
+            width:70%;
+            margin:0 auto;
+            justify-content:space-between;
+
+            .nosboxleft {
+                margin: auto auto;
+                border: solid 1px black;
+                height: 300px;
+                width:100%;
+                max-width: 350px;
+                min-width: 200px;
+                background-image: url(../imagenes/nosotros2.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .nosboxright {
+                background-color: rgb(255, 255, 255);
+                margin: 0 auto;
+                text-align: center;
+                padding: 10px;
+                width:60%;
+                border: solid 1px black;
+                box-shadow: 12px 12px 0px gold;
+
+                .nosotros_p {
+                    padding: 30px;
+                    margin-top:30px;
+                }
+
+                a {
+                    button {
+                        width:300px;
+                        height: 30px;
+                        margin: 20px;
+                        background-color: rgb(0, 0, 0);
+                        border-style: none;
+                        color:white;
+                        &:hover {
+                            background-color: gold;
+                            color: black;
+                            cursor:pointer;
+                            box-shadow: 2px 2px 6px black;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    
+    .hr-nos-serv {
+        border-style: none;
+        background-color: rgb(172, 172, 172);
+        width:80%;
+        height: 2px;
+        margin: 0 auto;
+    }
+
+    /* -----NUESTROS SERVICIOS----- */
+
+    .servicios {
+        width: 100%;
+        margin-bottom: 50px;
+
+        h2 {
+            padding: 30px 0 30px;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: normal;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .todos {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            .cuadro {
+                border: solid 1px black;
+                width: 18%;
+                min-width: 211px;
+                height: fit-content;
+                padding: 10px;
+                margin:40px 20px;
+                background-color: white;
+                box-shadow: 12px 12px 0px gold;
+
+                .servicono {
+                    border: solid 1px rgb(0, 0, 0);
+                    margin-top: -50px;
+                    width: 70px;
+                    height:70px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: white;
+
+                    img {
+                        width: 100%;
+                        padding:5px;
+                    }
+                }
+
+                .service {
+                    text-align: center;
+                }
+
+                .description {
+                    text-align: center;
+                    margin-top:10px;
+                }
+            }
+        }
+
+        .servbutton {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+
+            a {
+                width: 40%;
+                margin-bottom: 30px;
+
+                button {
+                    width:100%;
+                    padding: 5px;
+                    background-color: rgb(0, 0, 0);
+                    border-style: none;
+                    color :white;
+                    &:hover {
+                        background-color: gold;
+                        color: black;
+                        cursor:pointer;
+                        box-shadow: 2px 2px 6px black;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ---- FOOTER PREIMAGE */
+
+    .imgprefooter {
+        width: 100%;
+        height:400px;
+        margin-top:-30px;
+        margin-bottom: 50px;
+        background-color: aquamarine;
+        background-image: url(../imagenes/portada_index3.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 4rem;
+            color: white; 
+            text-transform:uppercase;
+            text-align: center;
+            margin:0;
+
+            span {
+                color:gold;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------------*/
+/* ------NOSOTROS PAGE------ */
+main {
+    /* PORTADA - NOSOTROS */
+
+    .nosotrospordata {
+        width:100%;
+        padding: 300px 0 150px;
+        background-image: url(../imagenes/portada_nosotros2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position:center;
+
+        h2 {
+            color:white;
+            font-size: 6vw;
+            text-align: center;
+            letter-spacing: 2rem;
+        }
+    }
+    /* ---TEXTO NOSOTROS--- */
+
+    .nosotrospage {
+        width: 100%;
+        height:fit-content;
+        background-color: gold;
+        justify-items: center;
+        padding-bottom: 30px;
+
+        .nosotrosparagraph {
+            width: 80%;
+            height:fit-content;
+            margin: 40px auto 20px;
+            text-align: center;
+            padding:40px 0px 0px;
+        }
+
+        .nosbutton {
+            display:flex;
+            justify-content: center;
+
+            a {
+                button {
+                    width:300px;
+                    height: 30px;
+                    background-color: rgb(0, 0, 0);
+                    border-style: none;
+                    color:white;
+                    text-transform:uppercase;
+                    &:hover {
+                        background-color: rgb(255, 255, 255);
+                        color: black;
+                        cursor:pointer;
+                        box-shadow: 2px 2px 6px black;
+                    }
+                }
+            }
+        }
+    }
+    /* ---MISION Y VISION--- */
+
+    .misionvision {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .mvbox {
+            width:20%;
+            min-width: 350px;
+            height: 80%;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 20px;
+
+            .mvtitulo {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 20px;
+            } 
+
+            .mvparagraph {
+                background-color: rgb(255, 255, 255);
+                border: solid 1px black;
+                padding: 20px 30px 20px;
+                box-shadow: 12px 12px 0px gold;
+            }
+        }
+    }
+
+    .noshr {
+        border-style: none;
+        background-color: rgb(172, 172, 172);
+        width:80%;
+        height: 2px;
+        margin: 10px auto;
+    }
+
+    /* ---POR QUE ELEGIRNOS--- */
+
+    .elegirnos {
+        width: 100%;
+        justify-content: center;
+        padding-top: 40px;
+
+        .elegirnostitulo {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .elegirnosopciones {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width:80%;
+            margin:0 auto;
+
+            .elegirnosbox {
+                width: 300px;
+                margin: 30px;
+
+                .elegirnosicon {
+                    height: 150px;
+                    width: 150px;
+                    border: solid 1px black;
+                    margin:0 auto;
+                    box-shadow: 10px 10px 0px gold;
+                    background-color: white;
+
+                    img{
+                        width:100%;
+                        padding:15px;
+                    }
+                }
+
+                .elegirnosdescription {
+                    text-align: center;
+                    margin-top: 20px;
+                
+                }
+            }
+        }
+    }
+
+    .hrelegirnos {
+        border-style: none;
+        background-color: rgb(172, 172, 172);
+        width:80%;
+        height: 2px;
+        margin: 10px auto;
+    }
+
+    /* ---NUESTROS VALORES--- */
+
+    .valores {
+        width: 100%;
+        justify-content: center;
+        padding-top: 40px;
+
+        .valorestitulo {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .valoresopciones {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width:80%;
+            margin:0 auto 50px;
+
+            .valoresbox {
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top:30px;
+
+                .valoresicon {
+                    height: 150px;
+                    width: 150px;
+                    border: solid 1px black;
+                    margin:0 auto;
+                    box-shadow: 10px 10px 0px gold;
+                    background-color: white;
+
+                    img{
+                        width:100%;
+                        padding:15px;
+                    }
+                }
+
+                .valoresdescription {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* ------SERVICIOS PAGE------ */
+/* PORTADA - SERVICIOS */
+
+main {
+    .serviciospordata {
+        width:100vw;
+        padding: 300px 0 150px;
+        background-image: url(../imagenes/portada_servicios.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position:center;
+
+        h2 {
+            color:white;
+            font-size: 6vw;
+            text-align: center;
+            letter-spacing: 2rem;
+        }
+    }
+
+    /* SERVICIOS PARRAFO */
+
+    .serviciospage {
+        width: 100%;
+        height:fit-content;
+        background-color: gold;
+        justify-items: center;
+        padding-bottom: 30px;
+
+        .serviciosparagraph {
+            width: 80%;
+            height:fit-content;
+            margin: 40px auto 20px;
+            text-align: center;
+            padding:40px 0px 0px;
+        }
+
+        .servbutton {
+            display:flex;
+            justify-content: center;
+
+            a {
+                width:300px;
+
+                button {
+                    width:100%;
+                    height: 30px;
+                    background-color: rgb(0, 0, 0);
+                    border-style: none;
+                    color:rgb(255, 255, 255);
+                    text-transform:uppercase;
+                    &:hover {
+                        background-color:rgb(255, 255, 255);
+                        color: black;
+                        cursor: pointer;
+                        box-shadow: 2px 2px 6px rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+
+    .serviciostodos {
+        .serviciocaja {
+            width: 70%;
+            margin:100px auto;
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: gold;
+            padding:30px;
+
+            .servleft {
+                background-color: rgb(255, 255, 255);
+                padding: 30px;
+                width:60%;
+                height: 100%;
+                margin-top:-50px;
+                margin-left: -50px;
+                border: solid 1px black;
+
+                .serviciotitle {
+                    font-size:2rem;
+                    margin-bottom: 10px;
+                    margin-left: 10px;
+                }
+
+                .description {
+                    font-size:1rem;
+                    margin: 30px 0px;
+                    text-indent: 10px;
+                }
+
+                .servbuttons {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        button {
+                            width:200px;
+                            height: 30px;
+                            background-color: rgb(0, 0, 0);
+                            border-style: none;
+                            color:white;
+                            text-transform:uppercase;
+                            &:hover {
+                                background-color: gold;
+                                color: black;
+                                cursor:pointer;
+                            }  
+                        }
+                    }
+                }
+            }
+
+            .servright {
+                background-color: rgb(59, 135, 223);
+                border: solid 1px black;
+                height: 250px;
+                width: 40%;
+                margin-left:20px;
+                background-size: cover;
+                background-position: center;
+            }
+            .imgserv1 {
+               background-image: url(../imagenes/cam_security.jpg); 
+            }
+            .imgserv2 {
+                background-image: url(../imagenes/sens_mov.jpg);
+                background-position: 0px -50px;
+             }
+            .imgserv3 {
+                background-image: url(../imagenes/cerco-electrico.jpg);
+                background-position: top;
+             }
+            .imgserv4 {
+                background-image: url(../imagenes/detector_inc.jpg); 
+             }
+        }
+    }
+}
+
+/* ------PREGUNTAS FRECUENTES PAGE------ */
+/* PORTADA - FAQS */
+
+main {
+    .pregfrecportada {
+        width:100%;
+        padding: 300px 0 150px;
+        background-image: url(../imagenes/portada_nosotros.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position:top;
+
+        h2 {
+            color:white;
+            font-size: 6vw;
+            text-align: center;
+            letter-spacing: 2rem;
+        }
+    }
+
+    /* layoutit faqs */
+
+    .layoutfaqs {  
+        display: grid;
+        grid-template-columns: 0.9fr 1.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "faqsparagraph faqs";
+
+        .faqsparagraph { 
+            grid-area: faqsparagraph; 
+            background-color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .faqdescrip {
+                text-align: center;
+                width: 60%;
+                font-size:1.3rem;
+                
+                span {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .faqs { 
+            grid-area: faqs;
+            padding: 100px 0;
+
+        }
+    }
+}
+
+/* ------CONTACTO PAGE------ */
+/* PORTADA - CONTACTO */
+
+div {
+    .contactospordata {
+        width:100%;
+        padding: 300px 0 150px;
+        background-image: url(../imagenes/portada_contact.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position:bottom;
+
+        h2 {
+            color:white;
+            font-size: 6vw;
+            text-align: center;
+            letter-spacing: 2rem;
+
+        }
+    }
+}
+
+main {
+    .layoutform {
+        display: grid;
+        grid-template-columns: 0.9fr 1.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "formparagraph formu";
+          
+        .formparagraph { 
+            grid-area: formparagraph; background-color: #ffd700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .formdescrip {
+                text-align: center;
+                width: 60%;
+                font-size:1.3rem;
+
+                span {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .formu{ 
+            grid-area: formu;
+            padding: 50px 0;
+
+            // @include media(bp3) {
+            //     padding:0;
+            // }
+
+            .contact_form {
+                margin: 100px auto;
+                width:40vw;
+                padding: 50px;
+                border: solid 1px black;
+                box-shadow: 7px 7px 0px gold;
+
+                // @include media(bp3) {
+                //     width: 60vw;
+                // }
+
+                // @include media(bp9) {
+                //     width: 70vw;
+                // }
+
+                // @include media(bp13) {
+                //     width: 90vw;
+                //     padding: 30px;
+                // }
+                
+                div {
+                    div {
+                        div {
+                            input {
+                                .input_height {
+                                    height: 50px;
+                                    box-shadow: 7px 7px 0px gold;
+                                    border-radius: 0;    
+                                    border: solid 1px black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .text_box {
+                    border: solid 1px black;
+                    border-radius: 0;
+                    box-shadow: 7px 7px 0px gold;
+
+                    .span_box{
+                        border-radius: 0;
+                        min-height: 150px;
+                    }
+
+                    .area_box {
+                        border-radius: 0;
+                        min-height: auto;
+                        max-height: 150px;
+                    }
+                }
+
+                div {
+                    label {
+                        .linkterms {
+                            text-decoration: none;
+                            color:rgb(185, 185, 185);
+
+                            &:hover {
+                                text-decoration: underline;
+                                color:rgb(102, 102, 102)
+                            }
+                        }
+                    }
+                }
+
+                .button_form {
+                    border-radius: 0;
+                    color:white;
+                    background-color: black;
+                    &:hover {
+                        color:rgb(0, 0, 0);
+                        background-color: gold;
+                        box-shadow: 2px 2px 6px black; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---------------RESPONSIVE WEB DESIGN--------------*/
+
+@import "media";
+
+// $breakpoints: (
+//     bp1 : 1349px,
+//     bp2 : 1249px,
+//     bp3 : 1199px,
+//     bp4 : 1024px,
+//     bp5 : 991px,
+//     bp6 : 899px,
+//     bp7 : 862px,
+//     bp8 : 816px,
+//     bp9 : 768px,
+//     bp10 : 702px,
+//     bp11 : 636px,
+//     bp12 : 491px,
+//     bp13 : 425px,
+//     bp14 : 375px,
+//     bp15 : 371px,
+//     bp16 : 333px,
+//     bp17 : 320px
+// );
+
+// @mixin media($breakpoint) {
+//     @media screen and (max-width: map-get($breakpoints,$breakpoint))  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_1249($breakpoint) {
+//     @media screen and (max-width: 1249px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_1199($breakpoint) {
+//     @media screen and (max-width: 1199px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_1024($breakpoint) {
+//     @media screen and (max-width: 1024px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_991($breakpoint) {
+//     @media screen and (max-width: 991px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_899($breakpoint) {
+//     @media screen and (max-width: 899px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_862($breakpoint) {
+//     @media screen and (max-width: 862px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_816($breakpoint) {
+//     @media screen and (max-width: 816px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_768($breakpoint) {
+//     @media screen and (max-width: 768px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_702($breakpoint) {
+//     @media screen and (max-width: 702px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_636($breakpoint) {
+//     @media screen and (max-width: 636px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_491($breakpoint) {
+//     @media screen and (max-width: 491px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_425($breakpoint) {
+//     @media screen and (max-width: 425px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_375($breakpoint) {
+//     @media screen and (max-width: 375px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_371($breakpoint) {
+//     @media screen and (max-width: 371px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_333($breakpoint) {
+//     @media screen and (max-width: 333px)  {
+//         @content; 
+//     }
+// }
+
+// @mixin media_320($breakpoint) {
+//     @media screen and (max-width: 320px)  {
+//         @content; 
+//     }
+// }
