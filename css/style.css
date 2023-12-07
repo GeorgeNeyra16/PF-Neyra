@@ -900,7 +900,6 @@ main .layoutform .formu .contact_form .button_form:hover {
   main .serviciostodos .serviciocaja .servright {
     width: 100%;
     margin-left: -60px;
-    background-image: url(../imagenes/cam_security.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -1048,7 +1047,6 @@ main .layoutform .formu .contact_form .button_form:hover {
   main .serviciostodos .serviciocaja .servright {
     width: 100%;
     margin-left: -30px;
-    background-image: url(../imagenes/cam_security.jpg);
     background-size: cover;
     background-position: center;
   }
