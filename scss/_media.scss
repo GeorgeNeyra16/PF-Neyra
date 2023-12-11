@@ -175,6 +175,10 @@
     main .layoutform .formu .contact_form {
         width: 70vw;
     }
+
+    main .imgprefooter p {
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width: 702px)  {
     header .downhead {
@@ -199,6 +203,9 @@
     }
     header .downhead .logo img {
         width:170px;
+    }
+    main .imgprefooter p {
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 425px)  {

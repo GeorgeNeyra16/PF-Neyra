@@ -83,7 +83,7 @@ header .downhead ul li .actualpage {
 /* Footer Bootstrap ---------------------------------*/
 footer {
   width: 100%;
-  background-image: url(../imagenes/fondo_footer2.jpg);
+  background-image: url(../imagenes/fondo_footer.jpg);
   background-size: cover;
   background-attachment: fixed;
   bottom: 0;
@@ -202,7 +202,7 @@ main .nosotros .nosbox .nosboxleft {
   width: 100%;
   max-width: 350px;
   min-width: 200px;
-  background-image: url(../imagenes/nosotros2.jpg);
+  background-image: url(../imagenes/nosotros.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -318,7 +318,7 @@ main .imgprefooter {
   margin-top: -30px;
   margin-bottom: 50px;
   background-color: aquamarine;
-  background-image: url(../imagenes/portada_index3.jpg);
+  background-image: url(../imagenes/portada_index.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
@@ -349,7 +349,7 @@ main {
 main .nosotrospordata {
   width: 100%;
   padding: 300px 0 150px;
-  background-image: url(../imagenes/portada_nosotros2.jpg);
+  background-image: url(../imagenes/portada_nosotros.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -642,7 +642,7 @@ main {
 main .pregfrecportada {
   width: 100%;
   padding: 300px 0 150px;
-  background-image: url(../imagenes/portada_nosotros.png);
+  background-image: url(../imagenes/portada_faq.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -949,6 +949,9 @@ main .layoutform .formu .contact_form .button_form:hover {
   main .layoutform .formu .contact_form {
     width: 70vw;
   }
+  main .imgprefooter p {
+    font-size: 3rem;
+  }
 }
 @media screen and (max-width: 702px) {
   header .downhead {
@@ -973,6 +976,9 @@ main .layoutform .formu .contact_form .button_form:hover {
   }
   header .downhead .logo img {
     width: 170px;
+  }
+  main .imgprefooter p {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 425px) {
