@@ -730,13 +730,14 @@ main {
                 margin-left:20px;
                 background-size: cover;
                 background-position: center;
+                background-repeat: no-repeat;
             }
             .imgserv1 {
-               background-image: url(../imagenes/cam_security.jpg); 
+               background-image: url(../imagenes/cam_security.jpg);    
             }
             .imgserv2 {
                 background-image: url(../imagenes/sens_mov.jpg);
-                background-position: 0px -50px;
+                // background-position: 0px -50px;
              }
             .imgserv3 {
                 background-image: url(../imagenes/cerco-electrico.jpg);
@@ -923,11 +924,12 @@ main {
                     label {
                         .linkterms {
                             text-decoration: none;
-                            color:rgb(185, 185, 185);
+                            color:rgb(102, 102, 102);
+                            
 
                             &:hover {
                                 text-decoration: underline;
-                                color:rgb(102, 102, 102)
+                                color:rgb(185, 185, 185);
                             }
                         }
                     }

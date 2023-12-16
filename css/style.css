@@ -618,13 +618,13 @@ main .serviciostodos .serviciocaja .servright {
   margin-left: 20px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 main .serviciostodos .serviciocaja .imgserv1 {
   background-image: url(../imagenes/cam_security.jpg);
 }
 main .serviciostodos .serviciocaja .imgserv2 {
   background-image: url(../imagenes/sens_mov.jpg);
-  background-position: 0px -50px;
 }
 main .serviciostodos .serviciocaja .imgserv3 {
   background-image: url(../imagenes/cerco-electrico.jpg);
@@ -758,11 +758,11 @@ main .layoutform .formu .contact_form .text_box .area_box {
 }
 main .layoutform .formu .contact_form div label .linkterms {
   text-decoration: none;
-  color: rgb(185, 185, 185);
+  color: rgb(102, 102, 102);
 }
 main .layoutform .formu .contact_form div label .linkterms:hover {
   text-decoration: underline;
-  color: rgb(102, 102, 102);
+  color: rgb(185, 185, 185);
 }
 main .layoutform .formu .contact_form .button_form {
   border-radius: 0;
